@@ -73,10 +73,10 @@ window.addEventListener('DOMContentLoaded', () => {
       quizWrap.innerHTML = quizDisplay;
     });
   };
-
+let score = 0;
   // Calculate the score
   const calculateScore = () => {
-    let score = 0;
+    
     quizArray.map((quizItem, index) => {
       for (let i = 0; i < 4; i++) {
         //highlight the li if it is the correct answer
